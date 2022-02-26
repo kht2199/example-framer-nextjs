@@ -1,3 +1,4 @@
+import React from 'react';
 import TipInner from "https://framer.com/m/Tip-6qB7.js@NkG5ItXuUbLxKsBKXhst"
 
 export function Tip() {
