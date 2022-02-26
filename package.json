@@ -3,6 +3,8 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
+        "serve": "yarn; node esmbuild/esmbuild serve ./src 8000",
+        "esmbuild": "node esmbuild/esmbuild build ./components dist",
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
@@ -17,7 +19,11 @@
         "react-dom": "17.0.2"
     },
     "devDependencies": {
+        "esbuild": "^0.14.23",
         "eslint": "8.6.0",
-        "eslint-config-next": "12.0.7"
+        "eslint-config-next": "12.0.7",
+        "fs-extra": "^10.0.1",
+        "postcss-modules": "^4.3.1",
+        "tmp": "^0.2.1"
     }
 }
